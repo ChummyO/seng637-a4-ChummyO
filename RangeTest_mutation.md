@@ -8,4 +8,12 @@
    if (b0 <= this.lower);
    ```
 
-   This mutation changed the conditional boundary to < according to the PIT documentation [PIT doc](https://pitest.org/quickstart/mutators/). 
+This mutation changed the conditional boundary to < according to the PIT documentation [PIT doc](https://pitest.org/quickstart/mutators/). The mutant survived because there was no test case where the range was not completely outside the lower and upper bound range. Test case had to be commented out because it was causing a failure and mutation needs a green junit test
+
+2. #### Mutation #2 (on line #157, mutation #1)
+
+   Mutation applied by Pitest was `changed conditional boundary → SURVIVED` on the method `intersects(double b0, double b1)`. This mutation was applied to the below line of code
+
+   ```
+   if (b0 <= this.lower);
+   ```
