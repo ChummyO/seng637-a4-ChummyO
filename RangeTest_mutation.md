@@ -94,9 +94,9 @@
 
     Mutation applied by Pitest was `Decremented (a--) double local variable number 1 → SURVIVED` on the method `expandToInclude(Range range, double value)`. This mutation was applied to the below line of code
 
-   ```
-   return new Range(value, range.getUpperBound());
-   ```
+    ```
+    return new Range(value, range.getUpperBound());
+    ```
 
     This mutation decreases value by 1 which still includes value itself causing the mutant to survive.
 
