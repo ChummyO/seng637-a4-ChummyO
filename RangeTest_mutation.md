@@ -59,3 +59,23 @@ This mutation changed the conditional boundary to < according to the PIT documen
    ```
 
    Since the mutant is increasing this.upper by 1, NaN + 1 is still NaN so the mutant does the same thing as the code, hence it survives. If this.upper is an actual number, increasing it doesn't make a difference because it will still be an actual number and Double.isNaN(this.upper) will be false.
+
+7. #### Mutation #7 (on line #448, mutation #38)
+
+   Mutation applied by Pitest was `Decremented (a--) double field lower → SURVIVED` on the method `isNaNRange()`. This mutation was applied to the below line of code
+
+   ```
+   return Double.isNaN(this.lower) && Double.isNaN(this.upper);
+   ```
+
+   Since the mutant is decreasing this.lower by 1, NaN - 1 is still NaN so the mutant does the same thing as the code, hence it survives. If this.lower is an actual number, decreasing it doesn't make a difference because it will still be an actual number and Double.isNaN(this.lower) will be false.
+
+8. #### Mutation #8 (on line #448, mutation #39)
+
+   Mutation applied by Pitest was `Decremented (a--) double field upper → SURVIVED` on the method `isNaNRange()`. This mutation was applied to the below line of code
+
+   ```
+   return Double.isNaN(this.lower) && Double.isNaN(this.upper);
+   ```
+
+   Since the mutant is decreasing this.upper by 1, NaN - 1 is still NaN so the mutant does the same thing as the code, hence it survives. If this.upper is an actual number, decreasing it doesn't make a difference because it will still be an actual number and Double.isNaN(this.upper) will be false.
