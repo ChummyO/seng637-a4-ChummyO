@@ -88,16 +88,16 @@
    else if (value > range.getUpperBound());
    ```
 
- This mutation changed the conditional boundary to >= according to the PIT documentation [PIT doc](https://pitest.org/quickstart/mutators/). The mutant survived because it is an equivalent mutant which does the same thing as the original code because when value is equal to upperbound, it returns the range. 
+   This mutation changed the conditional boundary to >= according to the PIT documentation [PIT doc](https://pitest.org/quickstart/mutators/). The mutant survived because it is an equivalent mutant which does the same thing as the original code because when value is equal to upperbound, it returns the range. 
 
 10. #### Mutation #10 (on line #306, mutation #7)
 
-   Mutation applied by Pitest was `Decremented (a--) double local variable number 1 → SURVIVED` on the method `expandToInclude(Range range, double value)`. This mutation was applied to the below line of code
+    Mutation applied by Pitest was `Decremented (a--) double local variable number 1 → SURVIVED` on the method `expandToInclude(Range range, double value)`. This mutation was applied to the below line of code
 
    ```
    return new Range(value, range.getUpperBound());
    ```
 
- This mutation decreases value by 1 which still includes value itself causing the mutant to survive.
+    This mutation decreases value by 1 which still includes value itself causing the mutant to survive.
 
 
