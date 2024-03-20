@@ -79,3 +79,25 @@ This mutation changed the conditional boundary to < according to the PIT documen
    ```
 
    Since the mutant is decreasing this.upper by 1, NaN - 1 is still NaN so the mutant does the same thing as the code, hence it survives. If this.upper is an actual number, decreasing it doesn't make a difference because it will still be an actual number and Double.isNaN(this.upper) will be false.
+
+9. #### Mutation #9 (on line #308, mutation #1)
+
+   Mutation applied by Pitest was `changed conditional boundary → SURVIVED` on the method `expandToInclude(Range range, double value)`. This mutation was applied to the below line of code
+
+   ```
+   else if (value > range.getUpperBound());
+   ```
+
+ This mutation changed the conditional boundary to >= according to the PIT documentation [PIT doc](https://pitest.org/quickstart/mutators/). The mutant survived because it is an equivalent mutant which does the same thing as the original code because when value is equal to upperbound, it returns the range. 
+
+10. #### Mutation #10 (on line #306, mutation #7)
+
+   Mutation applied by Pitest was `Decremented (a--) double local variable number 1 → SURVIVED` on the method `expandToInclude(Range range, double value)`. This mutation was applied to the below line of code
+
+   ```
+   return new Range(value, range.getUpperBound());
+   ```
+
+ This mutation decreases value by 1 which still includes value itself causing the mutant to survive.
+
+
