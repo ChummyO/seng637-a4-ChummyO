@@ -48,4 +48,14 @@ This mutation changed the conditional boundary to < according to the PIT documen
    return Double.isNaN(this.lower) && Double.isNaN(this.upper);
    ```
 
-   Since the else statement is returning false, b0 < this.upper should be false to make that line false since b1 >= b0 will be true. replaing >= with > acts as an equivalent mutant because it does the same thing as the original code to make the second line true. The range will always have b1 >= b0 to be a valid range
+   Since the mutant is increasing this.lower by 1, NaN + 1 is still NaN so the mutant does the same thing as the code, hence it survives. If this.lower is an actual number, increasing it doesn't make a difference because it will still be an actual number and Double.isNaN(this.lower) will be false.
+
+6. #### Mutation #6 (on line #448, mutation #37)
+
+   Mutation applied by Pitest was `Incremented (a++) double field upper → SURVIVED` on the method `isNaNRange()`. This mutation was applied to the below line of code
+
+   ```
+   return Double.isNaN(this.lower) && Double.isNaN(this.upper);
+   ```
+
+   Since the mutant is increasing this.upper by 1, NaN + 1 is still NaN so the mutant does the same thing as the code, hence it survives. If this.upper is an actual number, increasing it doesn't make a difference because it will still be an actual number and Double.isNaN(this.upper) will be false.
