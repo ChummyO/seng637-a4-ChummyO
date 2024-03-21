@@ -159,6 +159,6 @@ When we analysed the PIT report, we found out that most mutants were either stub
 
 
 ## Difficulties, challenges, and lessons learned
-One of our team members encountered an error while trying to run PIT test. The error was **"Exception in thread "main" java.lang.IllegalArgumentException: Unsupported class file major version 63**. The error was solved by downgrading the JRE System Library to JavaSE-1.6 .
+One of our team members encountered an error while trying to run PIT test. The error was **"Exception in thread "main" java.lang.IllegalArgumentException: Unsupported class file major version 63**. After a lot of research, trial and error, the error was solved by downgrading the JRE System Library to JavaSE-1.6 .
 
   
