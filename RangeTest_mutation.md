@@ -156,3 +156,9 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 Our test suite developed for Range and DataUtilities classes were sufficient to test the boundary conditions
 
 When we analysed the PIT report, we found out that most mutants were either stubborn mutants or equivalent mutants. Therefore, there was nothing much to do. We added some more test cases for additional methods which improved the mutation score by  
+
+
+## Difficulties, challenges, and lessons learned
+2. This was another error encountered when trying to run Pitest in Eclipse. The error was solved by downgrading the JRE System Library to JavaSE-1.6 .
+
+   ![Pitest non JRE 8 error]()
