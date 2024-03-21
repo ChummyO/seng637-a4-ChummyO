@@ -156,7 +156,7 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 
 Our test suite developed for Range and DataUtilities classes were sufficient to test the boundary conditions
 
-When we analysed the PIT report, we found out that most mutants were either stubborn mutants or equivalent mutants. Therefore, there was nothing much to do. We added some more test cases for additional methods which improved the mutation score by  
+When we analysed the PIT report, we found out that most mutants were either stubborn mutants or equivalent mutants. Therefore, there was nothing much to do. We added some more test cases for additional methods which improved the mutation score form 41% to 53%, meeting the requirement of at least an increase of 10%  
 
 
 ## Difficulties, challenges, and lessons learned
