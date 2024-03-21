@@ -127,11 +127,11 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 
 - **Mutation score of Range - after**
 
-  ![Range_Mutants_Score_After](images/Range_Mutant_Score_After.png)
+  ![Range_Mutants_Score_After](Range_PIT_screenshot_after.png)
 
 - **Mutation statistics of Range - after**
 
-  ![Range_Mutants_Statistics_After](images/Range_Mutant_Statistics_After.png)
+  ![Range_Mutants_Statistics_After](mutation_stat_range_after.png)
 
   Below is the coverage of each method calculated manually for the Range class after adding test cases. As we could not improve scores significantly test cases for two additional methods were also created.
 
