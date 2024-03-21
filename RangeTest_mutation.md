@@ -145,8 +145,11 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
   | `Range.contains(double value)`           | 8        | 45     | 53    | 84.90      |
   | Total for original methods               | 85       | 300    | 385   | 77.92      |
   | -                                        | -        | -      | -     | -          |
-  | `Range.combine(Range, Range)`            | 4        | 29     | 33    | 87.87      |
-  | `Range.expand(Range, Range)`             | 16       | 118    | 134   | 88.60      |
+  | `Range.toString()`                       | 4        | 29     | 33    | 87.87      |
+  | `Range.equals(Object obj)`               | 16       | 118    | 134   | 88.60      |
+  | `Range.scale(Range base, double factor)` | 16       | 118    | 134   | 88.60      |
+  | `Range.getCentralValue()`                | 16       | 118    | 134   | 88.60      |
+  | `Range.getLength()`                      | 16       | 118    | 134   | 88.60      |
   | Total including new methods              | 75       | 456    | 531   | 85.87      |
 
 ## Analysis on effectiveness of each of the test classes
