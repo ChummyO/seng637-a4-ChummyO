@@ -137,13 +137,13 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 
   | Method                                   | Survived | Killed | Total | Coverage % |
   | ---------------------------------------- | -------- | ------ | ----- | ---------- |
-  | `Range.isNaNRange()`                     | 10       | 33     | 43    | 76.74      |
-  | `Range.intersects(double, double)`       | 17       | 89     | 106   | 83.96      |
+  | `Range.isNaNRange()`                     | 18       | 25     | 43    | 58.14      |
+  | `Range.intersects(double, double)`       | 27       | 77     | 104   | 74.03      |
   | `Range.expandToInclude(Range, double)`   | 10       | 57     | 67    | 85.07      |
-  | `Range.combineIgnoringNaN(Range, Range)` | 10       | 76     | 86    | 88.72      |
-  | `Range.combine(range1, range2)`          | 18       | 68     | 86    | 79.07      |
-  | `Range.contains(double value)`           | 18       | 68     | 86    | 79.07      |
-  | Total for original methods               | 55       | 309    | 364   | 84.89      |
+  | `Range.combineIgnoringNaN(Range, Range)` | 18       | 67     | 85    | 78.82      |
+  | `Range.combine(range1, range2)`          | 4        | 29     | 33    | 87.88      |
+  | `Range.contains(double value)`           | 8        | 45     | 53    | 84.90      |
+  | Total for original methods               | 85       | 300    | 385   | 77.92      |
   | -                                        | -        | -      | -     | -          |
   | `Range.combine(Range, Range)`            | 4        | 29     | 33    | 87.87      |
   | `Range.expand(Range, Range)`             | 16       | 118    | 134   | 88.60      |
