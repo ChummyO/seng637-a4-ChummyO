@@ -145,12 +145,12 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
   | `Range.contains(double value)`           | 8        | 45     | 53    | 84.90      |
   | Total for original methods               | 85       | 300    | 385   | 77.92      |
   | -                                        | -        | -      | -     | -          |
-  | `Range.toString()`                       | 4        | 29     | 33    | 87.87      |
-  | `Range.equals(Object obj)`               | 16       | 118    | 134   | 88.60      |
-  | `Range.scale(Range base, double factor)` | 16       | 118    | 134   | 88.60      |
-  | `Range.getCentralValue()`                | 16       | 118    | 134   | 88.60      |
-  | `Range.getLength()`                      | 16       | 118    | 134   | 88.60      |
-  | Total including new methods              | 75       | 456    | 531   | 85.87      |
+  | `Range.toString()`                       | 4        | 18     | 22    | 81.82      |
+  | `Range.equals(Object obj)`               | 7        | 66     | 73    | 90.41      |
+  | `Range.scale(Range base, double factor)` | 6        | 44     | 50    | 88         |
+  | `Range.getCentralValue()`                | 4        | 43     | 47    | 91.49      |
+  | `Range.getLength()`                      | 4        | 15     | 19    | 78.95      |
+  | Total including new methods              | 110      | 486    | 596   | 81.54      |
 
 ## Analysis on effectiveness of each of the test classes
 
