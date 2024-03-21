@@ -117,14 +117,13 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 
   | Method                                   | Survived | Killed | Total | Coverage % |
   | ---------------------------------------- | -------- | ------ | ----- | ---------- |
-  | `Range.isNaNRange()`                     | 10       | 33     | 43    | 76.74      |
-  | `Range.shift(Range, double, boolean)`    | 9        | 53     | 62    | 85.48      |
+  | `Range.isNaNRange()`                     | 18       | 25     | 43    | 58.14      |
   | `Range.intersects(double, double)`       | 27       | 77     | 104   | 74.03      |
   | `Range.expandToInclude(Range, double)`   | 10       | 57     | 67    | 85.07      |
-  | `Range.combineIgnoringNaN(Range, Range)` | 18       | 68     | 86    | 79.07      |
-  | `Range.combine(range1, range2)`          | 18       | 68     | 86    | 79.07      |
-  | `Range.contains(double value)`           | 18       | 68     | 86    | 79.07      |
-  | Total                                    | 70       | 294    | 364   | 80.77      |
+  | `Range.combineIgnoringNaN(Range, Range)` | 18       | 67     | 85    | 78.82      |
+  | `Range.combine(range1, range2)`          | 4        | 29     | 33    | 87.88      |
+  | `Range.contains(double value)`           | 8        | 45     | 53    | 84.90      |
+  | Total                                    | 85       | 300    | 385   | 77.92      |
 
 - **Mutation score of Range - after**
 
@@ -139,7 +138,6 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
   | Method                                   | Survived | Killed | Total | Coverage % |
   | ---------------------------------------- | -------- | ------ | ----- | ---------- |
   | `Range.isNaNRange()`                     | 10       | 33     | 43    | 76.74      |
-  | `Range.shift(Range, double, boolean)`    | 8        | 54     | 62    | 87.10      |
   | `Range.intersects(double, double)`       | 17       | 89     | 106   | 83.96      |
   | `Range.expandToInclude(Range, double)`   | 10       | 57     | 67    | 85.07      |
   | `Range.combineIgnoringNaN(Range, Range)` | 10       | 76     | 86    | 88.72      |
