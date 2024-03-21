@@ -101,3 +101,56 @@
     This mutation decreases value by 1 which still includes value itself causing the mutant to survive.
 
 
+## Mutation score and statistics
+
+After commenting out failing test cases in Assignment 3, we ran mutation tests on `Range` and `DataUtilities`. Then we added new test cases to increase the mutation score. 
+
+**Note**: All the 4 tables below includes equivalent mutations in coverage calculations in order to be consistent with the Pitest scores.
+
+- **Mutation score of Range - before**
+
+  ![Range_Mutants_Score_Before](images/Range_Mutant_Score_Before.png)
+
+- **Mutation statistics of Range - before**
+
+  ![Range_Mutants_Statistics_Before](images/Range_Mutant_Statistics_Before.png)
+
+  Due to the the Range class containing other methods that are not tested, the overall score is not a very accurate measure of the coverage. Below is the coverage of each method calculated manually.
+
+  | Method                                   | Survived | Killed | Total | Coverage % |
+  | ---------------------------------------- | -------- | ------ | ----- | ---------- |
+  | `Range.isNaNRange()`                     | 10       | 33     | 43    | 76.74      |
+  | `Range.shift(Range, double, boolean)`    | 9        | 53     | 62    | 85.48      |
+  | `Range.intersects(double, double)`       | 23       | 83     | 106   | 78.30      |
+  | `Range.expandToInclude(Range, double)`   | 10       | 57     | 67    | 85.07      |
+  | `Range.combineIgnoringNaN(Range, Range)` | 18       | 68     | 86    | 79.07      |
+  | Total                                    | 70       | 294    | 364   | 80.77      |
+
+- **Mutation score of Range - after**
+
+  ![Range_Mutants_Score_After](images/Range_Mutant_Score_After.png)
+
+- **Mutation statistics of Range - after**
+
+  ![Range_Mutants_Statistics_After](images/Range_Mutant_Statistics_After.png)
+
+  Below is the coverage of each method calculated manually for the Range class after adding test cases. As we could not improve scores significantly test cases for two additional methods were also created.
+
+  | Method                                   | Survived | Killed | Total | Coverage % |
+  | ---------------------------------------- | -------- | ------ | ----- | ---------- |
+  | `Range.isNaNRange()`                     | 10       | 33     | 43    | 76.74      |
+  | `Range.shift(Range, double, boolean)`    | 8        | 54     | 62    | 87.10      |
+  | `Range.intersects(double, double)`       | 17       | 89     | 106   | 83.96      |
+  | `Range.expandToInclude(Range, double)`   | 10       | 57     | 67    | 85.07      |
+  | `Range.combineIgnoringNaN(Range, Range)` | 10       | 76     | 86    | 88.72      |
+  | Total for original methods               | 55       | 309    | 364   | 84.89      |
+  | -                                        | -        | -      | -     | -          |
+  | `Range.combine(Range, Range)`            | 4        | 29     | 33    | 87.87      |
+  | `Range.expand(Range, Range)`             | 16       | 118    | 134   | 88.60      |
+  | Total including new methods              | 75       | 456    | 531   | 85.87      |
+
+## Analysis on effectiveness of each of the test classes
+
+Our test suite developed for Range and DataUtilities classes were sufficient to test the boundary conditions
+
+When we analysed the PIT report, we found out that most mutants were either stubborn mutants or equivalent mutants. Therefore, there was nothing much to do. We added some more test cases for additional methods which improved the mutation score by  
