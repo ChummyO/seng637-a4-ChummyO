@@ -109,7 +109,7 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 
 - **Mutation score of Range - before**
 
-  ![Range_Mutants_Score_Before](images/Range_Mutant_Score_Before.png)
+  ![Range_Mutants_Score_Before](Range_PIT_screenshot_before.png)
 
 - **Mutation statistics of Range - before**
 
