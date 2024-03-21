@@ -143,6 +143,8 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
   | `Range.intersects(double, double)`       | 17       | 89     | 106   | 83.96      |
   | `Range.expandToInclude(Range, double)`   | 10       | 57     | 67    | 85.07      |
   | `Range.combineIgnoringNaN(Range, Range)` | 10       | 76     | 86    | 88.72      |
+  | `Range.combine(range1, range2)`          | 18       | 68     | 86    | 79.07      |
+  | `Range.contains(double value)`           | 18       | 68     | 86    | 79.07      |
   | Total for original methods               | 55       | 309    | 364   | 84.89      |
   | -                                        | -        | -      | -     | -          |
   | `Range.combine(Range, Range)`            | 4        | 29     | 33    | 87.87      |
