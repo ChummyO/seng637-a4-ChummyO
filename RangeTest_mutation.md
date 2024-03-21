@@ -105,15 +105,13 @@
 
 After commenting out failing test cases in Assignment 3, we ran mutation tests on `Range` and `DataUtilities`. Then we added new test cases to increase the mutation score. 
 
-**Note**: All the 4 tables below includes equivalent mutations in coverage calculations in order to be consistent with the Pitest scores.
-
 - **Mutation score of Range - before**
 
   ![Range_Mutants_Score_Before](Range_PIT_screenshot_before.png)
 
 - **Mutation statistics of Range - before**
 
-  ![Range_Mutants_Statistics_Before](images/Range_Mutant_Statistics_Before.png)
+  ![Range_Mutants_Statistics_Before](mutation_stat_range_before.png)
 
   Due to the the Range class containing other methods that are not tested, the overall score is not a very accurate measure of the coverage. Below is the coverage of each method calculated manually.
 
