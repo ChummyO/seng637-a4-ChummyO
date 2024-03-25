@@ -165,7 +165,7 @@ After commenting out failing test cases in Assignment 3, we ran mutation tests o
 
 - **Mutation statistics of DataUtilities - after**
 
-  ![Range_Mutants_Statistics_After](mutation_stat_range_after.png)
+  ![Range_Mutants_Statistics_After](PIT_Coverage_Stats_After.png)
 
 ## Analysis on effectiveness of each of the test classes
 
